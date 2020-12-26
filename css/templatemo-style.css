@@ -101,6 +101,16 @@ p {
 	left: 6%;
 }
 
+@media (max-width: 768px){
+	.navbar-brand em{
+		left: 15%;
+	}
+
+	.testimonials-item{
+		margin: 3%;
+	}
+}
+
 .navbar-nav>li>a {
 	color: #fff!important;
 	font-size: 13px;
@@ -216,6 +226,12 @@ bootstrap.min.css:5
 	background-repeat: no-repeat;
 	background-size: cover;
   	vertical-align: middle;
+}
+
+@media (max-width: 768px){
+	.gradient-effect{
+		background-size: cover;
+	}
 }
 
 .baner-content {
@@ -336,6 +352,23 @@ bootstrap.min.css:5
   color: #f7c552;
 }
 
+#portfolio .btn-1 {
+	background-color:lightsalmon;
+	font-weight: 600;
+	color: black;
+	padding: 10px 35px 10px 35px;
+	margin-top: 15px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+#portfolio .btn-1:hover{
+	background-color: #F7C552;
+	transition: 2s all ease;
+}
+
+
 #portoflio .page-section {
 	padding: 0px;
 }
@@ -378,8 +411,33 @@ bootstrap.min.css:5
 #testimonial {
 	background-color: #f7c552;
 	text-align: center;
-	padding: 18% 0px;
-	height: 95vh;
+}
+
+#testimonial .left{
+	padding: 10% 0px;
+}
+
+#testimonial .right{
+	padding: 5% 0px 0 2%;
+}
+
+#testimonial .right img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+#testimonial .right img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
 }
 
 #testimonial .testimonials-item h4 {

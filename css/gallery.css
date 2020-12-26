@@ -1,0 +1,30 @@
+.header .navbar-header a {
+    position: fixed;
+    left: 8% !important;
+}
+
+.header .navbar-brand em {
+    position: fixed;
+    top: 0 !important;
+    left: 13% !important;
+}
+
+.parallax-content {
+    width: 100%;
+    min-height: 50vh;
+    background-size: cover;
+}
+
+.gradient-effect {
+    width: 100%;
+    background-image: url(../img/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    .header .navbar-brand em {
+        margin-left: 10%;
+    }
+}
